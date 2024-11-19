@@ -21,7 +21,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	st1 = (unsigned char *) s1;
 	st2 = (unsigned char *) s2;
 	i = 0;
-	while ((st1[i] || st2[i]) && i < n)
+	while (i < n)
 	{
 		if (st1[i] != st2[i])
 			return (st1[i] - st2[i]);
@@ -34,8 +34,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int	main(void)
 {
-	char str1[] = "aa";
-	char str2[] = "aa0";
+	char str1[] = "a";
+	char str2[] = "aaa";
 
 	printf("%d\n", memcmp(str1, str2, 3));
 	printf("%d\n", ft_memcmp(str1, str2, 3));
