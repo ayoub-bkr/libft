@@ -18,6 +18,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	unsigned char	*st1;
 	unsigned char	*st2;
 
+	if (!s1 || !s2 || n == 0)
+		return (0);
 	st1 = (unsigned char *)s1;
 	st2 = (unsigned char *)s2;
 	i = 0;
@@ -29,15 +31,15 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int	main(void)
-{
-	char str1[] = "test\200";
-	char str2[] = "test\0";
-	printf("%d\n", strncmp(str1, str2, 7));
-	printf("%d\n", ft_strncmp(str1, str2, 7));
-}
-*/
+// int	main(void)
+// {
+// 	// char str1[] = "test\200";
+// 	// char str2[] = "test\0";
+// 	// printf("%d\n", strncmp(str1, str2, 7));
+// 	// printf("%d\n", ft_strncmp(str1, str2, 7));
+// 	printf("%d\n", strncmp(NULL, NULL, 0));
+// 	printf("%d\n", ft_strncmp(NULL, NULL, 0));
+// }

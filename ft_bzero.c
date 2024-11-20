@@ -20,17 +20,15 @@ void	ft_bzero(void *s, size_t n)
 	while (i < n)
 		*((char *)s + i++) = 0;
 }
-/*
-#include <string.h>
+// #include <string.h>
 
-int	main()
-{
-	char	str[] = "hobahoba";
-	char	str1[] = "hobahoba";
+// int	main()
+// {
+// 	char	str[] = "hobahoba";
+// 	char	str1[] = "hobahoba";
 
-	ft_bzero(str, 4);
-	printf("%s$\n", str);
-	bzero(str1, 4);
-	printf("%s$\n", str1);
-}
-*/
+// 	ft_bzero("NULL", 0);
+// 	printf("%s$\n", str);
+// 	bzero("NULL", 0);
+// 	printf("%s$\n", str1);
+// }

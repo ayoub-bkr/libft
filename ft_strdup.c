@@ -29,15 +29,13 @@ char	*ft_strdup(const char *s)
 	*(m + i) = '\0';
 	return (m);
 }
-/*
-#include <string.h>
-#include <stdio.h>
+// #include <string.h>
+// #include <stdio.h>
 
-int	main()
-{
-	char str[] = "Hello";
+// int	main()
+// {
+// 	char str[] = "Hello";
 
-	printf("%s\n", strdup(str));
-	printf("%s\n", ft_strdup(str));
-}
-*/
+// 	printf("%s\n", strdup(""));
+// 	printf("%s\n", ft_strdup(""));
+// }

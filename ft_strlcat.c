@@ -19,11 +19,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	srclen;
 
 	i = 0;
+	if (size == 0 && !dst)
+		return (ft_strlen(src));
 	dstlen = ft_strlen((const char *)dst);
 	srclen = ft_strlen(src);
-	if (size == 0 && src[i])
-		return (srclen);
-	else if (size < dstlen)
+	if (size < dstlen)
 		return (size + srclen);
 	if (size > dstlen)
 	{
@@ -36,21 +36,23 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dstlen + i] = '\0';
 	return (dstlen + srclen);
 }
-/*
-#include <string.h>
 
-int	main()
-{
-	//char dest[];
-	//printf("%d\n", ft_strlcat(dest, "lorem ipsum dolor sit amet", 15));
-    	//write(1, dest, 15);
-	
-	char dst1[] = "Hello";
-	char src1[] = " World";
+// #include <string.h>
 
-	printf("%d\n", (int)ft_strlcat(dst1, src1, 4));
-	ft_strlcat(dst1, src1, 4);
-	printf("%s\n", dst1);
+// int	main()
+// {
+// 	//char dest[];
+// 	//printf("%d\n", ft_strlcat(dest, "lorem ipsum dolor sit amet", 15));
+//     	//write(1, dest, 15);
 	
-}
-*/
+// 	char dst1[] = "Hello";
+// 	char src1[] = " World";
+
+// 	printf("%d\n", (int)ft_strlcat(dst1, src1, 4));
+// 	ft_strlcat(dst1, src1, 4);
+// 	printf("%s\n", dst1);
+	 
+// 	ft_strlcat("text", NULL, 0);
+// 	strlcat("text",NULL,0);
+// 	 printf("%d\n", ft_strlcat(NULL,"achaq",0));
+// }

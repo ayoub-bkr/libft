@@ -52,7 +52,7 @@ char	**ft_split(char const *s, char c)
 	char	**m;
 
 	i = 0;
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 	m = malloc(sizeof(char *) * (words(s, c) + 1));
 	if (!m)
@@ -76,15 +76,15 @@ char	**ft_split(char const *s, char c)
 // #include <stdio.h>
 // int	main()
 // {
-// 	int	i = 0;
-// 	char s[] = "Hello broda sista";
-// 	char *rrr = malloc(1);
-// 	*rrr = 0;
-// 	char **r = ft_split(rrr, '\0');
-// 	while (r && r[i])
-// 	{
-// 		printf("%s\n", r[i]);
-// 		i++;
-// 	}
+// 	// int	i = 0;
+// 	// char s[] = "Hello broda sista";
+// 	// char *rrr = malloc(1);
+// 	// *rrr = 0;
+// 	// char **r = ft_split(rrr, '\0');
+// 	// while (r && r[i])
+// 	// {
+// 	// 	printf("%s\n", r[i]);
+// 	// 	i++;
+// 	// }
 // 	char	**c = ft_split(NULL, ' ');
 // }

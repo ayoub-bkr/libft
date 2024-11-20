@@ -15,7 +15,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	i = 0;
-	if (!s)
+	if (!f || !s)
 		return ;
 	while (s[i])
 	{
@@ -23,19 +23,17 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-/*
-#include <stdio.h>
-void	upalpha(unsigned int i, char *s)
-{
-	if (s[i] >= 'a' && s[i] <= 'z')
-		s[i] -= 32;
-}
-
-int	main(void)
-{
-	char	s[] = "DadA";
-	printf("%s\n", s);
-	ft_striteri(s, upalpha);
-	printf("%s", s);
-}
-*/
+// #include <stdio.h>
+// void	upalpha(unsigned int i, char *s)
+// {
+// 	if (s[i] >= 'a' && s[i] <= 'z')
+// 		s[i] -= 32;
+// }
+// int	main(void)
+// {
+// 	// char	s[] = "DadA";
+// 	// printf("%s\n", s);
+// 	// ft_striteri(s, upalpha);
+// 	// printf("%s", s);
+// 	ft_striteri(NULL,NULL);
+// }

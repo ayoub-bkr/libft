@@ -33,14 +33,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <string.h>
+// #include <string.h>
 
-int	main()
-{
-	char str[] = "Book is not a book";
-	char s[] = "ok";
-	printf("%s\n", strnstr(str, s, 4));
-	printf("%s\n", ft_strnstr(str, s, 4));
-}
-*/
+// int	main()
+// {
+// 	char *str = NULL;
+// 	char s[] = "ok";
+// 	strnstr("NULL", "NULL", 0);
+// 	ft_strnstr("NULL", "NULL", 0);
+// }

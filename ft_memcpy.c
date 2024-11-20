@@ -30,17 +30,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <string.h>
 
-int	main()
-{
-	//char	dst[] = "Hoba";
-	//char	src[] = "Pika";
-	//char	dst1[] = "Hoba";
-	//char	src1[] = "Pika";
+// #include <string.h>
 
-	printf("%s\n", (char *)memcpy(NULL, NULL, 1));
-	printf("%s\n", (char *)ft_memcpy(NULL, NULL, 1));
-}
-*/
+// int	main()
+// {
+// 	//char	dst[] = "Hoba";
+// 	//char	src[] = "Pika";
+// 	//char	dst1[] = "Hoba";
+// 	//char	src1[] = "Pika";
+
+// 	printf("%s\n", (char *)memcpy(NULL, "NULL", 1));
+// 	printf("%s\n", (char *)ft_memcpy(NULL, "NULL", 1));
+// }

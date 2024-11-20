@@ -27,13 +27,11 @@ char	*ft_strchr(const char *s, int c)
 		return (&st[i]);
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int	main()
-{
-	printf("%s\n", strchr("", '\0'));
-	printf("%s\n", ft_strchr("", '\0'));
-}
-*/
+// int	main()
+// {
+// 	printf("%s\n", strchr("", '\0'));
+// 	printf("%s\n", ft_strchr("", '\0'));
+// }

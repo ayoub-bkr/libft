@@ -27,7 +27,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
+
 #include <string.h>
 
 int	main()
@@ -35,8 +35,9 @@ int	main()
 	//char str[] = "this is her bag";
 	//printf("%s\n", (char *)memchr(str, 'i', 13));
 	//printf("%s\n", (char *)ft_memchr(str, 'i', 13));
-	int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
-    printf("%s\n", (char *)ft_memchr(tab, -1, 7));
-	printf("%s\n", (char *)memchr(tab, -1, 7));
+	// int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
+    // printf("%s\n", (char *)ft_memchr(tab, -1, 7));
+	// printf("%s\n", (char *)memchr(tab, -1, 7));
+	
 }
-*/
+
